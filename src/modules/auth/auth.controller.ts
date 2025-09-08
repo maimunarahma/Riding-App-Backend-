@@ -8,7 +8,7 @@ import httpStatus from "http-status-codes";
 
 // Controller for local login using Passport
 const credentialLogin = async(req: Request, res: Response, next: NextFunction) => {
-  console.log("choda")
+  
   passport.authenticate("local", async (err: any, user: any, info: any) => {
     try {
       if (err) return next(err);
